@@ -41,6 +41,15 @@
         <ul class="nav navbar-nav">
           
           <!-- User Account: style can be found in dropdown.less -->
+          <?php
+            // session_start();
+            // $username = $_SESSION['nama'];
+            // $querysql = mysqli_query($link, "SELECT * FROM tb_user WHERE username=$username");
+            // $ambilgambar = mysqli_fetch_array($querysql);
+            // $gambar = $ambilgambar['foto'];
+            // echo "<script>alert('$gambar')</script>";
+            // echo $gambar;
+          ?>
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
@@ -49,10 +58,10 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="assets/image/<?php echo $gambar ?>" class="img-circle" alt="User Image">
 
                 <p>
-                  Muharir - Web Developer
+                  <?php echo $gambar?> - Web Developer
                   <small>Member since Nov. 2014</small>
                 </p>
               </li>

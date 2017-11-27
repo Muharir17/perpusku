@@ -18,6 +18,10 @@
       include "tambah_user.php";
       break;
 
+      case "simpan_user";
+      include "simpan_user.php";
+      break;
+
       case "detail_user";
       include "detail_user.php";
       break;
@@ -30,6 +34,13 @@
       include "hapus_user.php";
       break;
       
+      case "edit_user";
+      include "edit_user.php";
+      break;
+
+      case "update_user";
+      include "update_user.php";
+      break;
     }
   ?>
 

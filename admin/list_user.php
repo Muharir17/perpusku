@@ -30,7 +30,7 @@
 
 					<table class="table table-bordered">
 					<?php
-						$halaman = 10;
+						$halaman = 5;
 						$page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
 						$mulai = ($page>1) ? ($page * $halaman) - $halaman : 0;
 						$result = mysqli_query($link, "SELECT*FROM tb_user");
@@ -72,7 +72,7 @@
 											
 										</td>
 									<td>
-										<a href="#"><i class="fa fa-edit"></i></a> || <a href="?page=hapus_user&id=<?php echo $user[0]; ?>" onclick="return confirm('Anda yakin ingin menghapus Anggota <?php echo $user[1]; ?> ?')"><i class="fa fa-trash"></i></a>
+										<a href="?page=edit_user&id=<?php echo $user[0]; ?>"><i class="fa fa-edit"></i></a> || <a href="?page=hapus_user&id=<?php echo $user[0]; ?>" onclick="return confirm('Anda yakin ingin menghapus Anggota <?php echo $user[1]; ?> ?')"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
 						<?php
@@ -81,7 +81,15 @@
 					</tbody>
 						
 					</table>
-
+					<div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+              <li><a href="#">Halaman</a></li>
+              <?php for($i=1; $i<=$pages; $i++) { ?>
+                <li><a href="?page=list_user&halaman=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+              <?php } ?>
+              </ul>
+            </div>
+            </div>
 
 
 				</div>
