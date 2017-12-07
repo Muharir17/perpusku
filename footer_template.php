@@ -9,6 +9,7 @@
 
 <!-- jQuery 2.2.3 -->
 <script src="../assets/js/jquery-2.2.3.min.js"></script>
+<script src="../assets/js/validator.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="../assets/js/bootstrap.min.js"></script>
 <!-- datepicker -->

@@ -14,7 +14,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Data Anggota</a></li>
+            <li class="active"><a href="?page=list_anggota"><i class="fa fa-circle-o"></i> Data Anggota</a></li>
             <li><a href="index2.html"><i class="fa fa-circle-o"></i> Data Buku</a></li>
             <li><a href="?page=list_user"><i class="fa fa-circle-o"></i> Data User</a></li>
           </ul>

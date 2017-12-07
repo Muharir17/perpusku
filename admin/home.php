@@ -41,6 +41,37 @@
       case "update_user";
       include "update_user.php";
       break;
+
+
+      // untuk anggota
+      case "tambah_anggota";
+      include "tambah_anggota.php";
+      break;
+
+      case "simpan_anggota";
+      include "simpan_anggota.php";
+      break;
+
+      case "detail_anggota";
+      include "detail_anggota.php";
+      break;
+
+      case "list_anggota";
+      include "list_anggota.php";
+      break;
+
+      case "hapus_anggota";
+      include "hapus_anggota.php";
+      break;
+      
+      case "edit_anggota";
+      include "edit_anggota.php";
+      break;
+
+      case "update_anggota";
+      include "update_anggota.php";
+      break;
+
     }
   ?>
 
