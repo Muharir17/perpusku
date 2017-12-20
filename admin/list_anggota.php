@@ -10,11 +10,11 @@
 
 	<section class="content-header">
 		<h1>
-			Admin <small>Daftar User</small>
+			Admin <small>Daftar Anggota</small>
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-book"></i>Dashboard</a></li>
-			<li class="active">Daftar User</li>
+			<li class="active">Daftar Anggota</li>
 		</ol>
 	</section>
 
@@ -26,7 +26,9 @@
 						<h3 class="box-title">Daftar Anggota</h3>
 					</div>
 
-					<a href="?page=tambah_anggota" class="btn btn-primary">Tambah Anggota</a>
+					<a href="?page=tambah_anggota" class="btn btn-primary">Tambah Anggota</a> 
+					<a target="blank" href="print_anggota.php" class="btn btn-danger"><i class="fa fa-print" aria-hidden="true"></i>
+Print</a>
 
 					<table class="table table-bordered">
 					<?php
