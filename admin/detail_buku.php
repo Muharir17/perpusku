@@ -10,11 +10,11 @@
 
 	<section class="content-header">
 		<h1>
-			Admin <small>Detail User</small>
+			Admin <small>Detail Buku</small>
 		</h1>
 		<ol class="breadcrumb">
 			<li><a href="#"><i class="fa fa-book"></i>Dashboard</a></li>
-			<li class="active">Detail User</li>
+			<li class="active">Detail Buku</li>
 		</ol>
 	</section>
 
@@ -23,7 +23,7 @@
 			<div class="col-md-12">
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Detail User</h3>
+						<h3 class="box-title">Detail Buku</h3>
 					</div>
 
 
@@ -37,27 +37,27 @@
 						<tbody>
 							<tr>
 								<th width="30%">ID</th>
-								<td>: <?php echo $data[0]; ?></td>
+								<td>: <?php echo $data['judul']; ?></td>
 							</tr>
 							<tr>
-								<th width="30%">Username</th>
-								<td>: <?php echo $data[1]; ?></td>
+								<th width="30%">Pengarang</th>
+								<td>: <?php echo $data['pengarang']; ?></td>
 							</tr>
 							<tr>
-								<th width="30%">Password</th>
-								<td>: <?php echo $data['password']; ?></td>
+								<th width="30%">Penerbit</th>
+								<td>: <?php echo $data['penerbit']; ?></td>
 							</tr>
 							<tr>
-								<th width="30%">Email</th>
-								<td>: <?php echo $data['email']; ?></td>
+								<th width="30%">ISBN</th>
+								<td>: <?php echo $data['isbn']; ?></td>
 							</tr>
 							<tr>
-								<th width="30%">Foto</th>
+								<th width="30%">Cover</th>
 								<td> 
 									<?php
-										$cek =  $data['foto'];
-										if (isset($data['foto'])) {
-											 echo ": <img src='../assets/image/$cek', alt='' width='200' height='250'>";
+										$cek =  $data['cover'];
+										if (isset($data['cover'])) {
+											 echo ": <img src='../assets/image/cover/$cek', alt='' width='200' height='250'>";
 										} else {
 											echo ": tidak ada data";
 										}
@@ -66,23 +66,28 @@
 								</td>
 							</tr>
 							<tr>
-								<th width="30%">Level</th>
-								<td>: <?php 
-												if ($data['level'] == 1) {
-													echo "Admin";
-												}elseif ($data['level'] == 2) {
-													echo "Pengguna";
-												}else{
-													echo "";
-												}
-										 ?>
-													
+								<th width="30%">Tahun Terbit</th>
+								<td>: <?php echo $data['thn_terbit']?>
 								</td>
+							</tr>
+							<tr>
+								<th width="30%">Jumlah Buku</th>
+								<td>: <?php echo $data['jumlah_buku']?>
+								</td>
+							</tr>
+							<tr>
+								<th width="30%">Lokasi Buku</th>
+								<td>: <?php echo $data['lokasi']?>
+								</td>
+							</tr>
+							<tr>
+								<th width="30%">Tanggal Input</th>
+								<td>: <?php echo date('d-m-Y', strtotime($data['tgl_input'])); ?></td>
 							</tr>
 							<tr>
 								<td></td>
 								<?php $id = $data['id']; ?>
-								<td colspan="2"><a href='?page=edit_user&id=<?php echo $id; ?>' class="btn btn-info">Edit User</a></td>
+								<td colspan="2"><a href='?page=edit_buku&id=<?php echo $id; ?>' class="btn btn-info">Edit User</a></td>
 							</tr>
 						</tbody>
 					</table>

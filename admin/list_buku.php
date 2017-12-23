@@ -65,7 +65,7 @@
 									<td><?php echo '<img src="../assets/image/cover/'.$a.'" alt="" width=40 height=40>'; ?></td>
 									<td><?php echo $buku['jumlah_buku']; ?></td>
 									<td>
-										<a href="?page=edit_user&id=<?php echo $buku[0]; ?>"><i class="fa fa-edit"></i></a> || <a href="?page=hapus_user&id=<?php echo $buku[0]; ?>" onclick="return confirm('Anda yakin ingin menghapus Anggota <?php echo $buku[1]; ?> ?')"><i class="fa fa-trash"></i></a>
+										<a href="?page=edit_buku&id=<?php echo $buku[0]; ?>"><i class="fa fa-edit"></i></a> || <a href="?page=hapus_buku&id=<?php echo $buku[0]; ?>" onclick="return confirm('Anda yakin ingin menghapus Buku <?php echo $buku[1]; ?> ?')"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
 						<?php

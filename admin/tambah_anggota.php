@@ -8,7 +8,6 @@
 		include '../db/koneksi.php';
     
     $query = mysqli_query($link, "SELECT id, username FROM tb_user");
-		// $data = mysqli_fetch_array($query);
 ?>
 	<!-- ini untuk konten -->
 	<div class="content-wrapper">
