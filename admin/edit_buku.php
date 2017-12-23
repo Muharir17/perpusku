@@ -103,7 +103,7 @@
 
 					<div class="form-group">
 						<div class="col-md-10">
-							<label> ISBN </label>
+							<label> ISBN NA</label>
 							<input type="text" class="form-control" name="isbn" required>
 						</div>
 					</div>
