@@ -11,16 +11,6 @@ $lokasi = $_POST['lokasi'];
 $tgl_input = date('Y-m-d');
 $cover = $_POST['cover'];
 
-echo $judul."<br>";
-echo $pengarang."<br>";
-echo $penerbit."<br>";
-echo $tahun."<br>";
-echo $isbn."<br>";
-echo $jumlah."<br>";
-echo $lokasi."<br>";
-echo $tgl_input."<br>";
-echo $_FILES['cover']['name']."<br>";
-
 if ($_POST['simpan']) {
 	$extensi_diperbolehkan = array('png','jpg','jpeg');
 	$nama = $_FILES['cover']['name'];
@@ -37,8 +27,6 @@ if ($_POST['simpan']) {
 			if (!$query) {
 
 				$isi = "Gagal Menambahkan Data dengan kesalahan =  ".mysqli_errno($link). " - ".mysqli_error($link);
-				echo $isi;
-				die();
 				echo "<meta http-equiv='refresh' content='0; url=home.php?page=tambah_buku?status=$isi'>";
 			}else{
 				$query = mysqli_query($link, "SELECT id FROM tb_buku WHERE isbn='$isbn'");

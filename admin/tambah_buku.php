@@ -114,10 +114,10 @@
 						<div class="col-md-10">
 							<label> Lokasi </label>
 							<select required name="lokasi" class="form-control">
-								<option>-----Pilih Lokasi---------</option>
+								<option>-------Pilih Lokasi---------</option>
 								<option value="rak1">Rak 1</option>
 								<option value="rak2">Rak 2</option>
-								<option value="rak3">Rak 1</option>
+								<option value="rak3">Rak 3</option>
 							</select>
 						</div>
 					</div>
