@@ -106,6 +106,10 @@
       include "update_buku.php";
       break;
 
+      case "cari_buku";
+      include "cari_buku.php";
+      break;
+
     }
   ?>
 

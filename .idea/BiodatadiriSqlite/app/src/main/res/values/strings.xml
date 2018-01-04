@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Biodata diri</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_buatbiodata">Membuat Biodata Baru</string>
+    <string name="title_activity_lihatbiodata">Melihat Biodata</string>
+    <string name="title_activity_updatebiodata">Memperbarui Biodata</string>
+</resources>

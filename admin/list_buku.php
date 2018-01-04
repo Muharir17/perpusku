@@ -23,10 +23,21 @@
 			<div class="col-md-12">
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">Daftar Buku</h3>
-					</div>
+						<h3 class="box-title">Daftar Buku</h3> <br>
 
-					<a href="?page=tambah_buku" class="btn btn-primary">Tambah Buku</a>
+						<a href="?page=tambah_buku" class="btn btn-primary">Tambah Buku</a>
+						<a target="blank" href="print_buku.php" class="btn btn-danger"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+						<div class="box-tools">
+							<form action="?page=cari_buku" method="POST">
+              <div class="input-group input-group-sm" style="width: 150px;">
+                <input type="text" name="cari" class="form-control pull-right" placeholder="Cari...">
+
+                <div class="input-group-btn">
+                  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+              </form>
+            </div>
 
 					<table class="table table-bordered">
 					<?php

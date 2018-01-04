@@ -95,8 +95,10 @@
 
 					<div class="form-group">
 						<div class="col-md-10">
-							<label> Cover </label>
-							<input type="file" class="form-control" placeholder="Cover Buku" value="<?php echo $data['cover'] ?>" name="cover" data-error="wajib di isi" required>
+							<label> Cover </label> <br>
+							<img src="../assets/image/cover/<?php echo $data['cover'] ?>" width="190" height="170">
+							<br>
+							<input type="file" name="cover">
 							<div class="help-block with-errors"></div>
 						</div>
 					</div>

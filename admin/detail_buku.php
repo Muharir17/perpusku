@@ -85,9 +85,13 @@
 								<td>: <?php echo date('d-m-Y', strtotime($data['tgl_input'])); ?></td>
 							</tr>
 							<tr>
-								<td></td>
 								<?php $id = $data['id']; ?>
-								<td colspan="2"><a href='?page=edit_buku&id=<?php echo $id; ?>' class="btn btn-info">Edit User</a></td>
+								<td></td>
+								<td colspan="2">
+									<a href='?page=edit_buku&id=<?php echo $id; ?>' class="btn btn-info">Edit Buku</a> &nbsp;
+									<a href='?page=list_buku' class="btn btn-warning">Daftar Buku</a>
+								</td>
+								
 							</tr>
 						</tbody>
 					</table>

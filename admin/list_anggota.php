@@ -4,6 +4,7 @@
 		echo "<script> alert('Silahkan login terlebih dahulu'); </script>";
 		echo "<meta http-equiv='refresh' content='0; url=../login.php'>";
 	}else{
+
 ?>
 	<!-- ini untuk konten -->
 	<div class="content-wrapper">

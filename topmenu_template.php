@@ -66,7 +66,7 @@
 
                 <p>
                   <?php echo $data['username']?> - Web Developer
-                  <small>Member since Nov. 2014</small>
+                  <small>Member since Nov. 2017</small>
                 </p>
               </li>
               <!-- Menu Footer-->
